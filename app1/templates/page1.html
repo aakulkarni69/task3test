@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Signup Page</h1>
+		{{message}}
+	<form method="post">
+		{%csrf_token%}
+		Username:- <input type="text" name="uname"><br>
+		Email:-    <input type="email" name="email"><br>
+		First Name:-<input type="text" name="fname"><br>
+		Last Name:- <input type="text" name="lname"><br>
+		Phone Number:-<input type="number" name="pno"><br>
+		Password:-<input type="password" name="pd"><br>
+		Confirm Password:-<input type="password" name="cpd"><br>
+
+		<input type="submit" name="Submit"><br>
+<a href="{% url 'page2'%}">Already signed up? Login from here</a>
+	</form>
+</body>
+</html>

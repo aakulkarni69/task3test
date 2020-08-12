@@ -6,6 +6,7 @@
 <body>
 <h1>User logged in!</h1>
 <form method="post">
+	{% csrf_token %}
 	<input type="submit" name="Submit">
 </form>
 </body>

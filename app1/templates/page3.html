@@ -5,7 +5,7 @@
 </head>
 <body>
 <h1>User logged in!</h1>
-<form method="post">
+<form action="{%url 'logout' %}" method="post">
 	{% csrf_token %}
 	<input type="submit" name="Logout">
 </form>
